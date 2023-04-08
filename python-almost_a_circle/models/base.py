@@ -5,8 +5,6 @@ import json
 import csv
 import os.path
 
-
-
 class Base:
     """"
         Class Base
@@ -89,6 +87,7 @@ class Base:
         for instance_dict in deserialized_content:
             instances_list.append(cls.create(**instance_dict))
         return instances_list
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """ Method that saves a CSV file """
